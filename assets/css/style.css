@@ -6,9 +6,13 @@
   }
 
   body{
-    background-color: #fbf3ff;
+    
+    background: linear-gradient(45deg, #7a93efaf, #0093e8);
+    height: 100vh; 
+  margin: 0; 
   }
   .container{
+   
     position: absolute;
     max-width: 800px;
     height: 500px;
@@ -20,8 +24,8 @@
   }
   .rightcol{
     position: relative;
-    background-image:linear-gradient(45deg , #5d56b8,#9b00e8) ;
-    border-radius: 25px;
+    background-image:linear-gradient(45deg , #2f24c6af,#0093e8) ;
+  
     color: rgb(192, 180, 165);
     font-size: 12px;
     padding: 25px;
@@ -38,12 +42,13 @@
   }
 
   .leftcol{
-    position: relative;
-    background:#e3dce8;
-    border-radius: 25px;
+    position:relative;
+    background-color: #446bd8b1;
+    width: 400px;
     height: 100%;
     padding: 25px;
     padding-left: 50px;
+    
     
   }
   .leftcol header{
@@ -53,14 +58,15 @@
 
   .row{
     height: 100%;
-    background-color: #e3dce8;
+    background-color:#446bd8b1;
     font-weight: 900;
+   
   }
   .mycard{
     position: relative;
     background: #fff;
     height: 100%;
-    border-radius: 25%;
+    
     -webkit-box-shadow:0px 10px 40px -10px rgba(0,0,0,0.7);
    -moz-box-shadow:0px 10px 40px -10px rgba(0,0,0,0.7);
    box-shadow:0px 10px 40px -10px rgba(0,0,0,0.7) ;
@@ -100,4 +106,8 @@
 .rightcol b{
   color: black;
   
+}
+.error{
+  color: red;
+  font-size: 12px;
 }
