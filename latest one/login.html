@@ -9,27 +9,30 @@
     <link rel="stylesheet" href="./assets/./css/style.css">
 </head>
 <body>
+
+    
+
     <div class="container">
         <div class="mycard">
             <div class="row">
                 <div class="col-md-6">
                     <div class="leftcol" id="leftcol">
-                        <form class="myform text-center" onsubmit="return validateform()">
-                            <header>Create your account</header>
+                        <form id="form" class="myform text-center" onsubmit="return validateform()">
+                            <header>𝖢𝗋𝖾𝖺𝗍𝖾 𝗒𝗈𝗎𝗋 𝖺𝖼𝖼𝗈𝗎𝗇𝗍</header>
                             <div class="form-group">
-                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
                                 <input type="text" class="details" id="name" placeholder="Enter your name">
                                 <div class="error" id="nameerror" aria-live="polite"></div>
                             </div>
 
                             <div class="form-group">
-                                <i class="fa-solid fa-lock"></i>
+                                <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
                                 <input type="password" class="details" id="password" placeholder="Enter your password">
                                 <div class="error" id="passerror"></div>
                             </div>
 
                             <div class="form-group" id="envelope">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
                                 <input type="email" class="details" id="email" placeholder="Enter your email Id">
                                 <div class="error" id="emailerror"></div>
                             </div>
@@ -64,6 +67,8 @@
             </div>
         </div>
     </div>
+
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

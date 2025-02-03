@@ -7,7 +7,7 @@
 
   body{
   
-    background: linear-gradient(45deg, #1f77aa 0%, #6db1d8 33%, #e4e6e7 33%, #ffffff 66%, #b4cddc 66%, #50a4d5 100%);
+    background: linear-gradient(48deg, #386b9f 0%, #303a81 33%, #e0dbdb 33%, #e0dbdb 66%, #dcd6d6 66%, #e2dddd 100%);
     height: 100vh; 
   margin: 0; 
   }
@@ -36,7 +36,6 @@
     height: 100%;
   }
   
-  
 
   .rightcol header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
@@ -49,24 +48,24 @@
 
   .leftcol{
     position:relative;
-    background-color: #f5f5ff;
-
+    background-color: #0f0f4d;
     width: 450px;
     height: 100%;
     padding: 25px;
     padding-left: 50px;
-    
-    
   }
   .leftcol header{
-     font-size: 44px;
-     color:#080708;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+     font-size: 40px;
+     color:#ffffff;
   }
 
   .row{
     height: 100%;
-    background-color:#4b658395;
+    background-color:#dde6f4;
     font-weight: 900;
+    display: flex;
+    flex-direction: row-reverse;
    
   }
   .mycard{
@@ -88,7 +87,7 @@
     border-radius: 25px;
     padding: 10px;
     padding-left: 40px;
-    border: 1px solid black; /* Changed border color to black */
+    border: 1px solid rgb(255, 255, 255); /* Changed border color to black */
     -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
     box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
@@ -101,7 +100,7 @@
   background: linear-gradient(45deg, #6ca340,#75a340);
 }
 .leftcol .btn:hover{
-  background: linear-gradient(45deg, #a65aed,#815aed);
+  background: linear-gradient(45deg, #ff6c3f,#ed905a);
 }
 
 .leftcol .details:focus{
@@ -116,16 +115,29 @@
   
 }
 /* General styles for the error box */
+/* Error Box Styling */
 .error-box {
   position: absolute;
-  background-color: rgb(252, 252, 252);
-  color: rgb(0, 0, 0);
-  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  color: #000000; /* Red color for better visibility */
+  padding: 8px 12px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Start invisible */
+  transform: translateY(-10px); /* Slightly above the position */
+  animation: fadeIn 0.3s ease forwards; /* Fade-in animation */
 }
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0); /* Move to the final position */
+  }
+}
+
 
 .social-icons {
   position: absolute;
@@ -147,3 +159,50 @@
   transform: scale(1.2); /* Slight zoom effect on hover */
   color: #ff4800; /* Change color on hover */
 }
+
+/* Other CSS styles */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+  }
+
+  .leftcol, .rightcol {
+      width: 100%;
+      height: auto;
+  }
+}
+
+/* Styling for small white circular snowflakes */
+.rightcol .snowflake {
+  position: absolute;
+  top: -10px; /* Start slightly above the right column */
+  background-color: white; /* Snowflake color */
+  border-radius: 50%; /* Perfect circle */
+  pointer-events: none; /* Prevent interaction */
+  z-index: 10; /* Ensure it stays above the content */
+  animation: snowfall linear infinite; /* Apply snowfall animation */
+  opacity: 0.8; /* Slight transparency */
+}
+
+/* Snowflake animation: from top to bottom */
+@keyframes snowfall {
+  0% {
+      transform: translateY(0); /* Start at the top */
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(calc(50vh)); /* Stop after half of the column height */
+      opacity: 0; /* Make snowflakes fade out at the end */
+  }
+}
+
+
+
+
+
+
+
