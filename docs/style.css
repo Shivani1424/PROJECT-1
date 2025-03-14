@@ -19,13 +19,12 @@
 
         /* Fixed Background */
         .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+           width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
             background: url('https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
-            z-index: -1;
+            
         }
 
         /* Container for the scrolling blocks */
@@ -39,19 +38,17 @@
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Aligns blocks to the right */
+    align-items: center; /* Centering boxes */
+    width: 100%; /* Ensure it doesn't go outside */
+    padding: 10px; /* Aligns blocks to the right */
 }
 
         /* Scrolling Boxes */
         .box {
-    width: 550px; /* Adjust size as needed */
-    height: 470px;
+    width: 90%; /* Make it flexible */
+    max-width: 550px; /* Prevent it from being too large */
+    height: auto;
     background: rgba(255, 255, 255, 0.9);
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold; */
     border: 7px #272728 solid;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
@@ -215,4 +212,26 @@ margin-top: 50px;
 
   }
   
+  
+  @media (max-width: 768px) {
+    .scroll-wrapper {
+        right: 0;
+        width: 100%;
+    }
+
+    .box {
+        width: 95%; /* Take up more width on small screens */
+        max-width: 400px; /* Reduce max width for better fit */
+    }
+
+    .hot-sell {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+}
+
   
