@@ -1,0 +1,279 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif; 
+}
+
+.table3 img{
+height: 100px;
+width: 100px;
+padding: 10px;
+}
+.table3{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px;
+}
+.price{
+    text-align: right;
+}
+.kedar{
+    text-align: left;
+}
+li{
+    list-style: none;
+}
+#rightcol4{
+  
+    background-color: #f6f7f2;
+    border:2px solid #808080 ;
+    padding: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.table2{
+    width: 100%;
+}
+.c1{
+    color: #000;
+    font-weight: bold;
+}
+.light{
+    color: #808080;
+    font-size: small;
+}
+.dark{
+    color: #000;
+    font-weight: bold;
+    font-size: small;
+}
+.table1{
+    width: 70%;
+}
+.c2{
+    color:#808080;
+    font-size: small;
+    font-weight: bold;
+}
+.mydiv {
+    display: flex;
+    justify-content: center;  /* Centers the container horizontally */
+    align-items: center;      /* Centers the container vertically */
+    height: 100vh;            /* Makes the div take the full viewport height */
+    background-color: #f8fce1;
+  }
+  
+ .navbar {
+    background-color: white !important;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering the Navbar Items */
+#rightcol {
+    display: flex;
+    justify-content: center; /* Centers the navbar inside the column */
+}
+
+/* Navbar Collapse */
+#mynavbar {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Ensures buttons are centered */
+    align-items: center;
+}
+
+/* Center the booking confirmation box */
+.checkmark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Checkmark Circle Animation */
+.checkmark-circle {
+    stroke: #4CAF50;
+    stroke-width: 4;
+    stroke-dasharray: 157;
+    stroke-dashoffset: 157;
+    animation: drawCircle 1s ease-in-out forwards;
+}
+
+/* Checkmark Tick Animation */
+.checkmark-check {
+    stroke: #4CAF50;
+    stroke-width: 4;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: drawCheck 0.5s 0.8s ease-in-out forwards;
+}
+
+/* SVG Styling */
+.checkmark {
+    width: 80px;
+    height: 80px;
+    stroke-linecap: round;
+}
+
+/* Animation for Circle */
+@keyframes drawCircle {
+    from {
+        stroke-dashoffset: 157;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Animation for Check */
+@keyframes drawCheck {
+    from {
+        stroke-dashoffset: 50;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Style the Booking Confirmed Text */
+.booking-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004aad;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Centering */
+#leftcol4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Navbar Buttons */
+.bt1 {
+    background: none;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #004aad;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.bt1:hover {
+    color: #002c66;
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #mynavbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bt1 {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+#rightcol4 {
+    background: linear-gradient(135deg, #f6f7f2, #e3e6d8);
+    border: 2px solid #808080;
+    padding: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;  /* Rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Stylish shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Smooth hover effect */
+#rightcol4:hover {
+    transform: scale(1.02);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Order Summary Title */
+#rightcol4 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004aad;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Separator */
+#rightcol4 hr {
+    border: none;
+    height: 2px;
+    background-color: #808080;
+    margin: 10px 0;
+}
+
+/* Table Styling */
+.table2, .table3 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Item Row */
+.table3 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Details */
+.table3 td {
+    font-size: 16px;
+    padding: 10px;
+   
+}
+
+@keyframes fadeInMoveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Start slightly left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(20px); /* Move slightly right */
+    }
+}
+
+.booking-confirmed {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004aad;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #e3e6d8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    animation: fadeInMoveRight 1s ease-in-out;
+    position: relative;
+    left: 20px; /* Move the text a bit to the right */
+}
+
+
+
