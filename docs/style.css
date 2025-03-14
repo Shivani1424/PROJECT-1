@@ -1,3 +1,4 @@
+      
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
   margin: 0;
@@ -37,18 +38,19 @@
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;  /* Centering boxes */
-    width: 100%; /* Ensure it doesn't go outside */
-    padding: 10px;/* Aligns blocks to the right */
+    align-items: flex-end; /* Aligns blocks to the right */
 }
 
         /* Scrolling Boxes */
         .box {
-     width: 90%; /* Adjust size as needed */
+    width: 550px; /* Adjust size as needed */
     height: 470px;
-	max-width: 550px;
     background: rgba(255, 255, 255, 0.9);
-   
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold; */
     border: 7px #272728 solid;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
@@ -210,4 +212,4 @@ font-size: 1rem;
 padding: 0 25px;
 margin-top: 50px;
 
-  }
+  
