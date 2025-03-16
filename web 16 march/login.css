@@ -1,0 +1,176 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Default Styles for Large Screens (remain unchanged) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: url('https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJla2tpbmd8ZW58MHx8MHx8fDA%3D') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  max-width: 900px;
+  height: 600px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  background-color: white; /* Ensures shadow visibility */
+}
+
+.rightcol {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1545652985-5edd365b12eb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;
+  width: 450px;
+  height: 600px; /* Fixed height for large screen */
+  color: rgb(192, 180, 165);
+  font-size: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.leftcol {
+  position: relative;
+  background-color: #0f0f4d;
+  width: 450px;
+  height: 600px; /* Fixed height for large screen */
+  padding: 25px;
+  padding-left: 50px;
+}
+
+.mycard {
+  position: relative;
+  background: #fff;
+  height: 100%;
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.box {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.leftcol .details {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 40px;
+  margin-top: 15px;
+  border: 1px solid rgb(255, 255, 255); /* Changed border color to black */
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+.myform {
+  position: relative;
+  margin-top: 50px;
+}
+
+.rightcol .social-icons {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  color: #fffefe;
+  font-size: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+  color: #ff4800;
+}
+
+/* Responsive Styles for Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    transform: none; /* Remove centering transform for mobile */
+  }
+
+  .row {
+    flex-direction: column-reverse; /* Stack the columns vertically */
+    background-color: #dde6f4;
+  }
+
+  .leftcol, .rightcol {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  .mycard {
+    height: auto;
+    box-shadow: none; /* Remove the shadow for a cleaner mobile look */
+  }
+
+  .leftcol header {
+    font-size: 30px; /* Reduce header size for mobile */
+    margin-bottom: 20px; /* Adjust spacing */
+  }
+
+  .rightcol header {
+    font-size: 30px; /* Adjust for smaller screen */
+    margin-bottom: 50px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    width: 100%;
+    background: linear-gradient(45deg, #6ca340, #75a340);
+  }
+
+  /* Adjust icon sizes for mobile */
+  .social-link {
+    font-size: 25px;
+  }
+
+  /* Adjust input fields for mobile */
+  .leftcol .details {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .leftcol .btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    position: relative;
+    bottom: 0;
+    gap: 10px;
+  }
+}
