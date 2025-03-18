@@ -75,45 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
  // Get the height of the right column
  const columnHeight = rightCol.offsetHeight;
 
- // Function to create a snowflake
- function createSnowflake() {
-     const snowflake = document.createElement("div");
-     snowflake.classList.add("snowflake");
-
-     // Random horizontal position within the right column
-     snowflake.style.left = Math.random() * rightCol.offsetWidth + "px"; // Between 0 and the column width
-
-     // Random size for variety (between 3px to 8px)
-     const size = Math.random() * 5 + 3;
-     snowflake.style.width = size + "px";
-     snowflake.style.height = size + "px";
-	 snowflake.style.opacity = Math.random() * 0.5 + 0.5; // Between 0.5 and 1
-snowflake.style.transform = `rotate(${Math.random() * 360}deg)`;
-
-
-     // Append snowflake to the right column
-     rightCol.appendChild(snowflake);
-
-     // Random animation duration (between 5s and 8s for falling)
-     const animationDuration = Math.random() * 3 + 5; // Between 5s and 8s
-     snowflake.style.animationDuration = animationDuration + "s";
-
-     // Calculate the distance the snowflake will fall (stop at half the column height)
-     const fallDistance = columnHeight / 2 + Math.random() * (columnHeight / 4); // Stop after half to three-quarters of the column height
-     snowflake.style.animation = `snowfall ${animationDuration}s linear infinite`;
-
-     // Set the stop point of the snowflake
-     snowflake.style.animation = `snowfall ${animationDuration}s linear forwards`;
-
-     // Remove the snowflake after it completes its animation
-     setTimeout(() => {
-         snowflake.remove();
-     }, animationDuration * 1000); // Remove after animation duration
- }
-
- // Create snowflakes periodically (every 200ms)
- setInterval(createSnowflake, 200);
-});
+ 
 
 
 
